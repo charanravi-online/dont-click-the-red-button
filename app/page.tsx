@@ -76,9 +76,14 @@ export default function RedButtonPage() {
 
       {/* Full-screen GIF overlay */}
       {isClicked && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center">
-          <img src="/dont-click-the-red-button/clicked_gif.gif" alt="Reaction GIF" className="w-full h-full object-cover" />
-        </div>
+        <>
+          <div className="fixed inset-0 z-50 flex items-center justify-center">
+            <img src="/dont-click-the-red-button/clicked_gif.gif" alt="Reaction GIF" className="w-full h-full object-cover" />
+          </div>
+          <div className="fixed bottom-0 left-1/2 transform -translate-x-1/2 z-50 text-xs text-white bg-black bg-opacity-60 px-3 py-1 rounded shadow">
+            Apashe & Flux Pavilion - Fracture (ft. Joey Valence & Brae)
+          </div>
+        </>
       )}
 
       <style jsx>{`
