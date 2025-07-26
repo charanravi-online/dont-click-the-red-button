@@ -24,7 +24,7 @@ export default function RedButtonPage() {
     })
 
     // Play the background music in loop
-    const music = new Audio("/charanravi.github.io/dont-click-the-red-button/track.mp3")
+    const music = new Audio("/dont-click-the-red-button/track.mp3")
     music.loop = true
     music.play().catch((error) => {
       console.log("Music playback failed:", error)
@@ -77,7 +77,7 @@ export default function RedButtonPage() {
       {/* Full-screen GIF overlay */}
       {isClicked && (
         <div className="fixed inset-0 z-50 flex items-center justify-center">
-          <img src="/charanravi.github.io/dont-click-the-red-button/clicked_gif.gif" alt="Reaction GIF" className="w-full h-full object-cover" />
+          <img src="/dont-click-the-red-button/clicked_gif.gif" alt="Reaction GIF" className="w-full h-full object-cover" />
         </div>
       )}
 
